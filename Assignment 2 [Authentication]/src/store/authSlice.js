@@ -14,6 +14,7 @@ export const registerUser = createAsyncThunk(
   "auth/registerUser",
   async (credentials, { rejectWithValue }) => {
     try {
+
       const users = JSON.parse(cookiesService.getItem("users") || "[]");
 
       if (users) {
@@ -89,6 +90,7 @@ export const authSlice = createSlice({
       .addCase(registerUser.fulfilled, (state, action) => {
         toast.success("Registration successful");
       })
+
       .addCase(registerUser.rejected, (state, action) => {
         toast.error(action.payload || "Registration failed");
       })
@@ -99,6 +101,7 @@ export const authSlice = createSlice({
         state.isAuthenticated = true;
         toast.success("Login successful");
       })
+      
       .addCase(loginUser.rejected, (state, action) => {
         state.token = "";
         state.profileData = [];
