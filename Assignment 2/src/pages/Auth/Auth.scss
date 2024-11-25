@@ -1,0 +1,172 @@
+#login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("../../assets/images/business.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#login .login-box {
+  border-radius: 10px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #023279;
+  background-color: rgba(255, 255, 255, 0.427);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+}
+
+#login .login-box .items {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login .login-box .items img {
+  height: 60px;
+  width: 100px;
+  object-fit: contain;
+}
+
+#login .login-box .items h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+#login .login-box .items form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#login .login-box .items form .input {
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+#login .login-box .items form .input:focus {
+  border: 2px solid #023279;
+}
+
+#login .login-box .items form .input .eye {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#login .login-box .items form .input .eye i {
+  font-size: 26px;
+  color: black;
+}
+
+#login .login-box .items form .col-2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#login .login-box .items form .input input {
+  height: 100%;
+  width: 100%;
+  padding: 12px 10px;
+  outline: none;
+  font-weight: 500;
+  color: #023279;
+  height: fit-content;
+  font-size: 0.85rem;
+  border: none;
+}
+
+#login .login-box .items form select {
+  width: 100%;
+  box-shadow: rgba(100, 106, 125, 0.27) 0px 0px 0.25em,
+    rgba(140, 168, 221, 0.05) 0px 0.25em 1em;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  font-weight: 500;
+  color: #023279;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+#login .login-box .items form select option {
+  font-weight: 500;
+}
+
+#login .login-box .items form .btn {
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: start;
+}
+
+#login .login-box .items form .btn a {
+  width: 100%;
+}
+
+#login .login-box .items form .btn button {
+  padding: 10px 40px;
+  border-radius: 2px;
+  font-weight: 500;
+  background-color: #003483;
+  border: 1px solid #023279;
+  color: #fff;
+  width: 100%;
+  font-size: 0.815rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+#login .sign-up p {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+#login .sign-up strong {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #023279;
+}
+
+#login .bg-img {
+  height: 100%;
+}
+
+#login .bg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.error-message {
+  width: 100%;
+  text-align: start;
+  color: red;
+  line-height: 1;
+}
